@@ -42,7 +42,7 @@ qsub steps/pilot_experiments/pilot_experiments.sh
 ```
 Please follow [FActScore](https://github.com/shmsw25/FActScore) repo to reconstruct *Inst-LLAMA-7B* used in our experiment. You can find our finetuned T5-3B on huggingface [ylu610/FT-T5-3B-Verifier](https://huggingface.co/ylu610/FT-T5-3B-Verifier).
 
-To prepare the database (approximately 21G) for retrieval verificaiton policy, you can either use the script from [FActScore](https://github.com/shmsw25/FActScore) repo or download it directly from the [Google Drive](https://drive.google.com/file/d/1mekls6OGOKLmt7gYtHs0WGf5oTamTNat/view).
+To prepare the database (approximately 21G) for the retrieval verificaiton policy, you can either use the script from [FActScore](https://github.com/shmsw25/FActScore) repo or download it directly from the [Google Drive](https://drive.google.com/file/d/1mekls6OGOKLmt7gYtHs0WGf5oTamTNat/view).
 
 ## Experiment
 
@@ -58,7 +58,7 @@ For the decomposition LLM *DeepSeek-V3*, this step is not required.
 ```bash
 qsub bash/train_dydecomp.sh
 ```
-Note that the example shown in `bash/train_dydecomp` uses decomposition LLM *Llama3-Inst-70B* and verifier *Llama3-Inst-8B* with *retrieval* verification policy. To find other options, please refer to the help statements of arguments `decomposer_name`, `verifier_name`, and `verify_policy` in `src/utils/arguments.py`.
+Note that the example shown in `bash/train_dydecomp` uses decomposition LLM *Llama3-Inst-70B* and verifier *Llama3-Inst-8B* with the *retrieval* verification policy. To find other options, please refer to the help statements of arguments `decomposer_name`, `verifier_name`, and `verify_policy` in `src/utils/arguments.py`.
 
 ### Step3: Evaluate Dynamic Decomposition Policy
 Please run the following command to evaluate the trained decomposition policy on different datasets and atomicities.
