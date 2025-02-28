@@ -1,0 +1,85 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "json",
+  "dataset_size": 867125,
+  "description": "",
+  "download_checksums": {
+    "/afs/crc.nd.edu/user/y/ylu33/Private/workspace/adaptive-decomp/data/FactScore/ChatGPT/ChatGPT.jsonl": {
+      "num_bytes": 1128530,
+      "checksum": null
+    }
+  },
+  "download_size": 1128530,
+  "features": {
+    "input": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "topic": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "cat": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "annotations": [
+      {
+        "text": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "is-relevant": {
+          "dtype": "bool",
+          "_type": "Value"
+        },
+        "model-atomic-facts": [
+          {
+            "text": {
+              "dtype": "string",
+              "_type": "Value"
+            }
+          }
+        ],
+        "human-atomic-facts": [
+          {
+            "text": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "label": {
+              "dtype": "string",
+              "_type": "Value"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 1995655,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 867125,
+      "num_examples": 183,
+      "dataset_name": "json"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

@@ -1,0 +1,49 @@
+# Model arguments
+decomposer_name: llama3-70b-inst-4bit
+verifier_name: llama3-8b-inst
+decompose_policy: binary
+verify_policy: retrieval
+
+# Data arguments
+data_path_list:
+  - data/FactScore/ChatGPT/atomicity_4
+  - data/FactScore/ChatGPT/atomicity_3
+  - data/FactScore/ChatGPT/atomicity_2
+  - data/FactScore/ChatGPT/atomicity_1
+  - data/FactScore/PerplexityAI/atomicity_4
+  - data/FactScore/PerplexityAI/atomicity_3
+  - data/FactScore/PerplexityAI/atomicity_2
+  - data/FactScore/PerplexityAI/atomicity_1
+num_workers: 1
+wandb: true
+wandb_project: dynamic-decompose
+wandb_name: decomp-gpt3.5-verify-llama3-8b-inst
+logging_interval: 5
+
+# Training arguments
+mode: train
+device: cuda
+train_steps: 100
+timesteps_per_batch: 10
+max_timesteps_per_episode: 30
+rollout_batch_size: 5
+mini_batch_size: 5
+lr: 3.0e-5
+gamma: 0.99
+lam: 0.95
+cliprange_policy: 0.2
+clip_critic_loss: true
+cliprange_value: 0.2
+scale_advantage: false
+filter_reward: false
+scale_reward: true
+use_reward_norm: true
+vf_coef: 0.5
+ent_coef: 0.005
+temperature: 0.0
+heuristic_split: false
+data_ratio: 1.0
+split_threshold: 40
+model_save_path: YOUR_MODEL_SAVE_PATH
+save_per_step: 10
+seed: 42

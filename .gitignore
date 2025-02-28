@@ -1,0 +1,11 @@
+__pycache__/
+wandb/
+tests/
+results/
+*logs/
+*.o*
+*.pkl
+*.pdf
+*.png
+*.csv
+cache*

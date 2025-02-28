@@ -1,0 +1,16 @@
+# training arguments
+decomposer_name: llama3-70b-inst-4bit
+verifier_name: llama3-8b-inst
+decompose_policy: binary
+verify_policy: retrieval
+device: cuda
+mode: eval
+wandb: false
+
+# evaluation arguments
+test_data_path: data/FactScore/ChatGPT/atomicity_0
+result_save_dir: results/FactScore/ChatGPT
+tag: main
+atomicity: 2
+temperature: 0.0
+cache_decomposition: true
