@@ -69,5 +69,13 @@ qsub bash/eval_dydecomp.sh
 ## Citation
 If you use this code, please cite the following paper:
 ```bibtex
-
+@misc{lu2025optimizingdecompositionoptimalclaim,
+      title={Optimizing Decomposition for Optimal Claim Verification}, 
+      author={Yining Lu and Noah Ziems and Hy Dang and Meng Jiang},
+      year={2025},
+      eprint={2503.15354},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2503.15354}, 
+}
 ```
