@@ -1,4 +1,4 @@
-The is the repository documenting experiments for the paper: **"Optimizing Decomposition for Optimal Claim Verification"**.
+The is the repository documenting experiments for the paper: [**Optimizing Decomposition for Optimal Claim Verification**](https://arxiv.org/abs/2503.15354).
 
 Note: We have removed directories that might contain personal or sensitive information. Please specify your desired directory before reimplementing our work, places inclduing `src/utils/utils.py`, `src/utils/configs.py`, and `bash/*.sh`.
 
