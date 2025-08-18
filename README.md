@@ -1,4 +1,4 @@
-The is the repository documenting experiments for the paper: [**Optimizing Decomposition for Optimal Claim Verification**](https://arxiv.org/abs/2503.15354).
+The is the repository documenting experiments for the ACL 2025 paper: [**Optimizing Decomposition for Optimal Claim Verification**](https://arxiv.org/abs/2503.15354).
 
 Note: We have removed directories that might contain personal or sensitive information. Please specify your desired directory before reimplementing our work, places inclduing `src/utils/utils.py`, `src/utils/configs.py`, and `bash/*.sh`.
 
@@ -69,13 +69,24 @@ qsub bash/eval_dydecomp.sh
 ## Citation
 If you use this code, please cite the following paper:
 ```bibtex
-@misc{lu2025optimizingdecompositionoptimalclaim,
-      title={Optimizing Decomposition for Optimal Claim Verification}, 
-      author={Yining Lu and Noah Ziems and Hy Dang and Meng Jiang},
-      year={2025},
-      eprint={2503.15354},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2503.15354}, 
+@inproceedings{lu-etal-2025-optimizing,
+    title = "Optimizing Decomposition for Optimal Claim Verification",
+    author = "Lu, Yining  and
+      Ziems, Noah  and
+      Dang, Hy  and
+      Jiang, Meng",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.254/",
+    doi = "10.18653/v1/2025.acl-long.254",
+    pages = "5095--5114",
+    ISBN = "979-8-89176-251-0"
 }
 ```
